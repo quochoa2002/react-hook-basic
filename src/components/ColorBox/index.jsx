@@ -1,9 +1,7 @@
 import React from 'react';
-import { useState } from 'react'
+import { useState } from 'react';
+import './ColorBox.scss';
 
-ColorBox.propTypes = {
-    
-};
 
 function getRandomColor() {
     const colorsList = ['deeppink', 'green', 'yellow', 'black', 'blue'];
@@ -12,11 +10,15 @@ function getRandomColor() {
 }
 
 function ColorBox() {
-    const [color, setColor] = useState('deeppink')
+    const [color, setColor] = useState(() => {
+        const initColor = localStorage.getItem('box_color') || 'deeppink';
+        return initColor;
+    })
     function handleBoxClick() {
         // get radom color --> set color
         const newColor = getRandomColor()
         setColor(newColor)
+        localStorage.setItem('box_color', newColor)
     }
 
     return (
