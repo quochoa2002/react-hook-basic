@@ -12,7 +12,7 @@ function formatDate(date) {
 
 function useClock() {
     const [timeString, setTimeString] = useState('');
-
+    
     useEffect(() => {
         const clockInterval = setInterval(() => {
             // lấy thời gian hiện tại bằng cách sử dụng new Date() 
