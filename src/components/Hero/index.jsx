@@ -15,7 +15,7 @@ function Hero(props) {
     return (
         <div>
             Hero name: {name}
-        </div>
+        </div>  
     );
 }
 

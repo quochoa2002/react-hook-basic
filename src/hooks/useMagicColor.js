@@ -8,7 +8,7 @@ function radomColor(currentColor) {
     let newIndex = currentIndex;
 
     while (currentIndex === newIndex) {
-        newIndex = Math.trunc(Math.random() * 3);   
+        newIndex = Math.trunc(Math.random() * COLOR_LIST.length);   
     }
 
     console.log(COLOR_LIST[newIndex])

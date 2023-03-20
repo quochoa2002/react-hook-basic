@@ -15,7 +15,7 @@ function TodoListF8() {
     const handleAddJobs = () => {
         if(job !== '') {
             setJobs(prev => {
-                let newJobs = [...prev];
+                let newJobs = [...prev];    
 
                 if(indexUpdate !== undefined) {
                     newJobs.splice(indexUpdate, 1, job);

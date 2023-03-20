@@ -5,6 +5,7 @@ import MagicBox from './components/MagicBox';
 import Clock from './components/Clock';
 import Reward from './components/Reward';
 import TodoListF8 from './components/TodoListF8';
+import Content from './components/UseEffectF8/Content';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +21,9 @@ function App() {
       {/* <p>{count}</p> */}
       {/* <button onClick={() => setCount(count + 1)}>Click</button> */}
       
-      <TodoListF8/>
+      {/* <TodoListF8/> */}
+
+      <Content/>
 
     </div>
   )
