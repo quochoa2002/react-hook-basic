@@ -6,13 +6,15 @@ import Clock from './components/Clock';
 import Reward from './components/Reward';
 import TodoListF8 from './components/TodoListF8';
 import Content from './components/UseEffectF8/Content';
+import HandleCancel from './components/UseCallbackF8';
+import UseMemoF8 from './components/UseMemoF8/USeMemoF8';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <h1>TodoListF8</h1>
+      {/* <h1>TodoListF8</h1> */}
 
       {/* <MagicBox />
 
@@ -23,7 +25,9 @@ function App() {
       
       {/* <TodoListF8/> */}
 
-      <Content/>
+      {/* <HandleCancel/> */}
+
+      <UseMemoF8/>
 
     </div>
   )
